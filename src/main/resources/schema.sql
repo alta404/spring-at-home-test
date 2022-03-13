@@ -8,5 +8,9 @@ CREATE TABLE artists
     category    VARCHAR(20) NOT NULL CHECK (CATEGORY IN ('ACTOR', 'PAINTER', 'SCULPTOR')),
     birthday    DATE,
     email       VARCHAR(50),
-    notes       VARCHAR(200)
+    notes       VARCHAR(200),
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP
 );
+
+CREATE SEQUENCE H2_SEQ AS INTEGER INCREMENT BY 50;

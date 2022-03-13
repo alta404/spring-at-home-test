@@ -65,3 +65,14 @@ Design and implement a Java REST API that CRUDs artists.
 - Getting a list of artists should be filterable. Ability to Filter by **category, birthday-month, search** (search -> can search by first_name or last_name, it should also partial search, ex. given search=vin should bring up kevin, if we have a kevin in the system) , you should also be able to filter by one, or more filters, for example search and category
 - Try to make sure your solution is the best performant, you can make any changes/additions you like to DB schema/indexes, application.properties, or any spring/java classes
 - **Assume** that we have a big collection of artists in the DB, make sure things are performant based on that assumption, however there is no need for pagination
+
+# How to install/run
+- build and run
+  - with gradle
+    1. ./gradlew build 
+    2. ./gradlew bootrun
+- from Intellij
+  - run TestApplication.class
+- once the app is started
+  - swagger is available at http://localhost:8080/swagger-ui/index.html
+  - openAPI is availabel at http://localhost:8080/v3/api-docs 
