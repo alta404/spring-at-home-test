@@ -21,7 +21,8 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "artists")
 public class Artist implements Serializable {
-    private static final long serialVersionUID = 1L;
+
+    private static final long serialVersionUID = 5357727966764186023L;
 
     public Artist(Integer id, Instant createdAt, Instant updatedAt, String firstName, String middleName, String lastName, ArtistCategory category, LocalDate birthday, String email, String notes) {
         this.id = id;
